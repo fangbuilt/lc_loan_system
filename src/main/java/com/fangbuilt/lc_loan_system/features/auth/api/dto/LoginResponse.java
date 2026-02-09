@@ -15,5 +15,6 @@ public class LoginResponse {
         this.accessToken = accessToken;
         this.refreshToken = refreshToken;
         this.expiresIn = expiresIn;
+        this.tokenType = "Bearer";
     }
 }

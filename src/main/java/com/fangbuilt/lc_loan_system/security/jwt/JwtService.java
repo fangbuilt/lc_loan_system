@@ -1,5 +1,6 @@
 package com.fangbuilt.lc_loan_system.security.jwt;
 
+import com.fangbuilt.lc_loan_system.features.user.domain.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
@@ -23,14 +24,28 @@ public class JwtService {
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
     }
-    
+
+    public String extractUserId(String token) {
+        return extractClaim(token, claims -> claims.get("userId", String.class));
+    }
+
+    public String extractRole(String token) {
+        return extractClaim(token, claims -> claims.get("role", String.class));
+    }
+
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = extractAllClaims(token);
         return claimsResolver.apply(claims);
     }
-    
+
     public String generateAccessToken(UserDetails userDetails) {
-        return generateAccessToken(new HashMap<>(), userDetails);
+        Map<String, Object> claims = new HashMap<>();
+        if (userDetails instanceof User user) {
+            claims.put("userId", user.getId().toString());
+            claims.put("role", user.getRole().name());
+        }
+
+        return buildToken(claims, userDetails, jwtProperties.getAccessTokenExpiration());
     }
     
     public String generateAccessToken(Map<String, Object> extraClaims, UserDetails userDetails) {
