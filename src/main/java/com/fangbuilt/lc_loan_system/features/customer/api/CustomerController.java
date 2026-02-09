@@ -36,7 +36,7 @@ public class CustomerController {
 
     // CUSTOMER endpoints
 
-    @PostMapping("/me/upload-ktp")
+    @PostMapping(value = "/me/upload-ktp", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @PreAuthorize("hasRole('CUSTOMER')")
     @Operation(summary = "Upload KTP (Customer only)")
     public ResponseEntity<Map<String, String>> uploadKtp(
@@ -47,7 +47,7 @@ public class CustomerController {
         return ResponseEntity.ok(Map.of("message", "KTP uploaded successfully"));
     }
 
-    @PostMapping("/me/upload-salary-slip")
+    @PostMapping(value = "/me/upload-salary-slip", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @PreAuthorize("hasRole('CUSTOMER')")
     @Operation(summary = "Upload Salary Slip (Customer only)")
     public ResponseEntity<Map<String, String>> uploadSalarySlip(

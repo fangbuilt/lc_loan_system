@@ -4371,3 +4371,380 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" becau
 2026-02-09 19:36:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
 2026-02-09 19:36:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
 2026-02-09 19:36:15 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - insert into refresh_tokens (created_at,customer_id,deleted_at,expires_at,revoked_at,token,updated_at,id) values (?,?,?,?,?,?,?,?)
+2026-02-09 19:37:29 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:44:01 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-09 19:44:01 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-09 19:44:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:44:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-09 19:44:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-09 19:44:05 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Starting LcLoanSystemApplication using Java 21.0.9 with PID 77672 (/home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/target/classes started by fangbuilt in /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system)
+2026-02-09 19:44:05 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-09 19:44:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09 19:44:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09 19:44:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09 19:44:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2026-02-09 19:44:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-09 19:44:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-09 19:44:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-09 19:44:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-09 19:44:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1635 ms
+2026-02-09 19:44:07 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09 19:44:07 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-02-09 19:44:07 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-09 19:44:07 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09 19:44:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-09 19:44:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@409f4657
+2026-02-09 19:44:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-09 19:44:07 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-09 19:44:08 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09 19:44:09 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:44:09 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-09 19:44:10 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-09 19:44:10 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-09 19:44:10 [restartedMain] INFO  c.f.l.s.service.FileStorageService - Upload directory created at: /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/uploads
+2026-02-09 19:44:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09 19:44:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-09 19:44:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-09 19:44:11 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Started LcLoanSystemApplication in 6.71 seconds (process running for 7.188)
+2026-02-09 19:44:17 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09 19:44:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-09 19:44:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-09 19:44:18 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 577 ms
+2026-02-09 19:45:29 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:45:30 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:45:30 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - insert into refresh_tokens (created_at,customer_id,deleted_at,expires_at,revoked_at,token,updated_at,id) values (?,?,?,?,?,?,?,?)
+2026-02-09 19:45:58 [http-nio-8080-exec-6] ERROR c.f.l.security.jwt.JwtAuthFilter - Cannot set user authentication: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2026-02-09 19:46:40 [http-nio-8080-exec-8] ERROR c.f.l.security.jwt.JwtAuthFilter - Cannot set user authentication: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2026-02-09 19:47:22 [http-nio-8080-exec-7] ERROR c.f.l.security.jwt.JwtAuthFilter - Cannot set user authentication: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2026-02-09 19:50:02 [http-nio-8080-exec-10] ERROR c.f.l.security.jwt.JwtAuthFilter - Cannot set user authentication: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2026-02-09 19:50:37 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:50:37 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:50:37 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select l1_0.id,l1_0.amount,l1_0.created_at,l1_0.credit_score,l1_0.customer_id,l1_0.deleted_at,l1_0.interest_rate,l1_0.rejection_reason,l1_0.status,l1_0.tenor_months,l1_0.updated_at from loans l1_0 left join customer_profiles c1_0 on c1_0.id=l1_0.customer_id where c1_0.id=?
+2026-02-09 19:51:04 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:51:04 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:51:04 [http-nio-8080-exec-2] INFO  c.f.l.f.loan.service.LoanService - Processing loan application for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8, amount: 12000000, tenor: 12
+2026-02-09 19:51:04 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 19:51:04 [http-nio-8080-exec-2] ERROR c.f.l.s.e.GlobalExceptionHandler - Business rule violation: KTP document must be uploaded before applying for a loan
+2026-02-09 19:51:04 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.fangbuilt.lc_loan_system.shared.exception.BusinessRuleViolationException: KTP document must be uploaded before applying for a loan]
+2026-02-09 19:51:41 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:52:06 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:56:25 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-09 19:56:25 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-09 19:56:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:56:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-09 19:56:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-09 19:56:38 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Starting LcLoanSystemApplication using Java 21.0.9 with PID 78437 (/home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/target/classes started by fangbuilt in /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system)
+2026-02-09 19:56:38 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-09 19:56:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09 19:56:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09 19:56:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09 19:56:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2026-02-09 19:56:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-09 19:56:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-09 19:56:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-09 19:56:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-09 19:56:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1831 ms
+2026-02-09 19:56:40 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09 19:56:41 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-02-09 19:56:41 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-09 19:56:41 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09 19:56:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-09 19:56:41 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c2a2d68
+2026-02-09 19:56:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-09 19:56:41 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-09 19:56:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09 19:56:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:56:43 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-09 19:56:44 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-09 19:56:44 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-09 19:56:44 [restartedMain] INFO  c.f.l.s.service.FileStorageService - Upload directory created at: /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/uploads
+2026-02-09 19:56:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09 19:56:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-09 19:56:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-09 19:56:46 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Started LcLoanSystemApplication in 8.439 seconds (process running for 9.335)
+2026-02-09 19:57:11 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-09 19:57:11 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-09 19:57:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:57:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-09 19:57:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-09 19:57:13 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Starting LcLoanSystemApplication using Java 21.0.9 with PID 78631 (/home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/target/classes started by fangbuilt in /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system)
+2026-02-09 19:57:13 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-09 19:57:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09 19:57:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09 19:57:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09 19:57:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2026-02-09 19:57:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-09 19:57:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-09 19:57:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-09 19:57:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-09 19:57:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2111 ms
+2026-02-09 19:57:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09 19:57:16 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-02-09 19:57:16 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-09 19:57:16 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09 19:57:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-09 19:57:16 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5aed0425
+2026-02-09 19:57:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-09 19:57:16 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-09 19:57:18 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09 19:57:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:57:18 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-09 19:57:19 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-09 19:57:19 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-09 19:57:19 [restartedMain] INFO  c.f.l.s.service.FileStorageService - Upload directory created at: /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/uploads
+2026-02-09 19:57:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09 19:57:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-09 19:57:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-09 19:57:21 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Started LcLoanSystemApplication in 8.435 seconds (process running for 9.018)
+2026-02-09 19:57:30 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09 19:57:30 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-09 19:57:30 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-09 19:57:31 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 723 ms
+2026-02-09 19:57:51 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:57:51 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:57:52 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - insert into refresh_tokens (created_at,customer_id,deleted_at,expires_at,revoked_at,token,updated_at,id) values (?,?,?,?,?,?,?,?)
+2026-02-09 19:58:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:58:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:58:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select l1_0.id,l1_0.amount,l1_0.created_at,l1_0.credit_score,l1_0.customer_id,l1_0.deleted_at,l1_0.interest_rate,l1_0.rejection_reason,l1_0.status,l1_0.tenor_months,l1_0.updated_at from loans l1_0 left join customer_profiles c1_0 on c1_0.id=l1_0.customer_id where c1_0.id=?
+2026-02-09 19:58:47 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 19:58:47 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 19:58:47 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 19:58:47 [http-nio-8080-exec-6] INFO  c.f.l.s.service.FileStorageService - File stored successfully: c94ff189-bfd9-4694-ba08-95d00fb55e7e.jpeg
+2026-02-09 19:58:47 [http-nio-8080-exec-6] INFO  c.f.l.f.c.service.CustomerService - KTP uploaded for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8
+2026-02-09 19:58:47 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - update customer_profiles set deleted_at=?,email=?,ktp_path=?,monthly_income=?,name=?,salary_slip_path=?,updated_at=?,user_id=? where id=?
+2026-02-09 20:00:13 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:00:13 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:13 [http-nio-8080-exec-7] INFO  c.f.l.f.loan.service.LoanService - Processing loan application for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8, amount: 10000000, tenor: 12
+2026-02-09 20:00:13 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:13 [http-nio-8080-exec-7] ERROR c.f.l.s.e.GlobalExceptionHandler - Business rule violation: Salary slip document must be uploaded before applying for a loan
+2026-02-09 20:00:13 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.fangbuilt.lc_loan_system.shared.exception.BusinessRuleViolationException: Salary slip document must be uploaded before applying for a loan]
+2026-02-09 20:00:46 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:00:46 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:46 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:46 [http-nio-8080-exec-9] INFO  c.f.l.s.service.FileStorageService - File stored successfully: 9b23f4d7-a935-4f12-9330-7330a0229b93.jpg
+2026-02-09 20:00:46 [http-nio-8080-exec-9] INFO  c.f.l.f.c.service.CustomerService - Salary slip uploaded for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8
+2026-02-09 20:00:46 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - update customer_profiles set deleted_at=?,email=?,ktp_path=?,monthly_income=?,name=?,salary_slip_path=?,updated_at=?,user_id=? where id=?
+2026-02-09 20:00:58 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:00:58 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:58 [http-nio-8080-exec-10] INFO  c.f.l.f.loan.service.LoanService - Processing loan application for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8, amount: 10000000, tenor: 12
+2026-02-09 20:00:58 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 20:00:58 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select case when count(l1_0.id)>0 then true else false end from loans l1_0 where l1_0.customer_id=? and l1_0.status=? and l1_0.deleted_at is null
+2026-02-09 20:00:58 [http-nio-8080-exec-10] INFO  c.f.l.s.service.CreditScoreService - Fetching credit score for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8
+2026-02-09 20:01:01 [http-nio-8080-exec-10] INFO  c.f.l.s.service.CreditScoreService - Credit score for customer cb4998fa-957b-4a19-a35a-3cccb7227df8: 806
+2026-02-09 20:01:01 [http-nio-8080-exec-10] INFO  c.f.l.f.loan.service.LoanService - Credit score received for loan bd387604-482e-41fb-86eb-0c7dddf956e4: 806
+2026-02-09 20:01:01 [http-nio-8080-exec-10] INFO  c.f.l.f.loan.service.LoanService - Loan bd387604-482e-41fb-86eb-0c7dddf956e4 APPROVED with 10% interest (excellent credit score: 806)
+2026-02-09 20:01:01 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - insert into loans (amount,created_at,credit_score,customer_id,deleted_at,interest_rate,rejection_reason,status,tenor_months,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2026-02-09 20:01:01 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - update loans set amount=?,credit_score=?,customer_id=?,deleted_at=?,interest_rate=?,rejection_reason=?,status=?,tenor_months=?,updated_at=? where id=?
+2026-02-09 20:01:01 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id=?
+2026-02-09 20:01:01 [http-nio-8080-exec-10] ERROR c.f.l.s.e.GlobalExceptionHandler - Unexpected error
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:492)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:345)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.fangbuilt.lc_loan_system.security.jwt.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:65)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.fangbuilt.lc_loan_system.features.loan.domain.Loan["customer"]->com.fangbuilt.lc_loan_system.features.customer.domain.CustomerProfile["user"]->com.fangbuilt.lc_loan_system.features.user.domain.User$HibernateProxy$K4hZIK1i["hibernateLazyInitializer"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1328)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:184)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:184)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:184)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1583)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:486)
+	... 98 common frames omitted
+2026-02-09 20:01:01 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]]
+2026-02-09 20:19:07 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-09 20:19:07 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-09 20:19:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 20:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-09 20:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-09 20:19:24 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Starting LcLoanSystemApplication using Java 21.0.9 with PID 80874 (/home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/target/classes started by fangbuilt in /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system)
+2026-02-09 20:19:24 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-09 20:19:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09 20:19:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09 20:19:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09 20:19:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2026-02-09 20:19:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-09 20:19:26 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-09 20:19:26 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-09 20:19:26 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-09 20:19:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2436 ms
+2026-02-09 20:19:27 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09 20:19:27 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-02-09 20:19:27 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-09 20:19:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09 20:19:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-09 20:19:27 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5aed0425
+2026-02-09 20:19:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-09 20:19:27 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-09 20:19:29 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09 20:19:29 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 20:19:29 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-09 20:19:30 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-09 20:19:30 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-09 20:19:30 [restartedMain] INFO  c.f.l.s.service.FileStorageService - Upload directory created at: /home/fangbuilt/java-projects/gosling-9-eternals/live-code/LC_loan_system/uploads
+2026-02-09 20:19:31 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09 20:19:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-09 20:19:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-09 20:19:32 [restartedMain] INFO  c.f.l.LcLoanSystemApplication - Started LcLoanSystemApplication in 9.208 seconds (process running for 9.799)
+2026-02-09 20:21:10 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09 20:21:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-09 20:21:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-09 20:21:10 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:21:10 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:21:11 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - insert into refresh_tokens (created_at,customer_id,deleted_at,expires_at,revoked_at,token,updated_at,id) values (?,?,?,?,?,?,?,?)
+2026-02-09 20:21:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:21:47 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:21:47 [http-nio-8080-exec-2] INFO  c.f.l.f.loan.service.LoanService - Processing loan application for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8, amount: 10000000, tenor: 12
+2026-02-09 20:21:47 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 20:21:47 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select case when count(l1_0.id)>0 then true else false end from loans l1_0 where l1_0.customer_id=? and l1_0.status=? and l1_0.deleted_at is null
+2026-02-09 20:21:47 [http-nio-8080-exec-2] INFO  c.f.l.s.service.CreditScoreService - Fetching credit score for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8
+2026-02-09 20:21:48 [http-nio-8080-exec-2] INFO  c.f.l.s.service.CreditScoreService - Credit score for customer cb4998fa-957b-4a19-a35a-3cccb7227df8: 620
+2026-02-09 20:21:48 [http-nio-8080-exec-2] INFO  c.f.l.f.loan.service.LoanService - Credit score received for loan 2fc79f94-e519-4582-9a95-7d63c22a4490: 620
+2026-02-09 20:21:48 [http-nio-8080-exec-2] INFO  c.f.l.f.loan.service.LoanService - Loan 2fc79f94-e519-4582-9a95-7d63c22a4490 APPROVED with 15% interest (good credit score: 620)
+2026-02-09 20:21:48 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - insert into loans (amount,created_at,credit_score,customer_id,deleted_at,interest_rate,rejection_reason,status,tenor_months,updated_at,id) values (?,?,?,?,?,?,?,?,?,?,?)
+2026-02-09 20:21:48 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - update loans set amount=?,credit_score=?,customer_id=?,deleted_at=?,interest_rate=?,rejection_reason=?,status=?,tenor_months=?,updated_at=? where id=?
+2026-02-09 20:31:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:31:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:31:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select l1_0.id,l1_0.amount,l1_0.created_at,l1_0.credit_score,l1_0.customer_id,l1_0.deleted_at,l1_0.interest_rate,l1_0.rejection_reason,l1_0.status,l1_0.tenor_months,l1_0.updated_at from loans l1_0 left join customer_profiles c1_0 on c1_0.id=l1_0.customer_id where c1_0.id=?
+2026-02-09 20:32:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.deleted_at,u1_0.enabled,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-09 20:32:17 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.user_id=? and cp1_0.deleted_at is null
+2026-02-09 20:32:18 [http-nio-8080-exec-5] INFO  c.f.l.f.loan.service.LoanService - Processing loan application for customer: cb4998fa-957b-4a19-a35a-3cccb7227df8, amount: 7000000, tenor: 12
+2026-02-09 20:32:18 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select cp1_0.id,cp1_0.created_at,cp1_0.deleted_at,cp1_0.email,cp1_0.ktp_path,cp1_0.monthly_income,cp1_0.name,cp1_0.salary_slip_path,cp1_0.updated_at,cp1_0.user_id from customer_profiles cp1_0 where cp1_0.id=? and cp1_0.deleted_at is null
+2026-02-09 20:32:18 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select case when count(l1_0.id)>0 then true else false end from loans l1_0 where l1_0.customer_id=? and l1_0.status=? and l1_0.deleted_at is null
+2026-02-09 20:32:18 [http-nio-8080-exec-5] ERROR c.f.l.s.e.GlobalExceptionHandler - Business rule violation: You already have a pending loan application. Please wait for approval or rejection.
+2026-02-09 20:32:18 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.fangbuilt.lc_loan_system.shared.exception.BusinessRuleViolationException: You already have a pending loan application. Please wait for approval or rejection.]
