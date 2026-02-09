@@ -4,6 +4,7 @@ import com.fangbuilt.lc_loan_system.features.customer.domain.CustomerProfile;
 import com.fangbuilt.lc_loan_system.features.customer.service.CustomerService;
 import com.fangbuilt.lc_loan_system.features.user.domain.User;
 import com.fangbuilt.lc_loan_system.shared.domain.PageRequest;
+import com.fangbuilt.lc_loan_system.shared.domain.PageResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -70,8 +71,8 @@ public class CustomerController {
     @GetMapping
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get all customers (Admin only)")
-    public ResponseEntity<List<CustomerProfile>> getAllCustomers() {
-        return ResponseEntity.ok(service.findAll(new PageRequest()).getContent());
+    public ResponseEntity<PageResponse<CustomerProfile>> getAllCustomers(PageRequest pageRequest) {
+        return ResponseEntity.ok(PageResponse.of(service.findAll(pageRequest)));
     }
 
     @GetMapping("/{id}/ktp")

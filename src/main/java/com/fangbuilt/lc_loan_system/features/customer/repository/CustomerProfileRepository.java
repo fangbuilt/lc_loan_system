@@ -16,4 +16,6 @@ public interface CustomerProfileRepository extends BaseRepository<CustomerProfil
     Optional<CustomerProfile> findByUserId(@Param("userId") UUID userId);
 
     boolean existsByEmail(String email);
+
+    Optional<CustomerProfile> findByEmail(String email);
 }

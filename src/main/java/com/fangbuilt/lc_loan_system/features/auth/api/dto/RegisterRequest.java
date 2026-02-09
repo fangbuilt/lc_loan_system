@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 public class RegisterRequest {
     @NotBlank private String username;
     @NotBlank @Size(min = 6) private String password;
-    @NotBlank private String name;
+    @NotBlank private String fullName;
     @NotBlank @Email private String email;
-    @NotNull
-    @DecimalMin("0") private BigDecimal monthlyIncome;
+    private String phone;
+    @NotNull @DecimalMin("0") private BigDecimal monthlyIncome;
 }

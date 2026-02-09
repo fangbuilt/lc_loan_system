@@ -38,17 +38,19 @@ public class AuthService {
 
     @Transactional
     public CustomerProfile register(RegisterRequest request) {
-        // Create User
+        if (customerProfileRepository.existsByEmail(request.getEmail())) {
+            throw new BadRequestException("Email already registered");
+        }
+
         User user = userService.createUser(
                 request.getUsername(),
                 request.getPassword(),
                 Role.CUSTOMER
         );
 
-        // Create CustomerProfile
         CustomerProfile profile = new CustomerProfile();
         profile.setUser(user);
-        profile.setName(request.getName());
+        profile.setName(request.getFullName());
         profile.setEmail(request.getEmail());
         profile.setMonthlyIncome(request.getMonthlyIncome());
 
