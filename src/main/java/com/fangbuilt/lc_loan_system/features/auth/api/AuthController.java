@@ -32,7 +32,7 @@ public class AuthController {
     @PostMapping("/login")
     @Operation(summary = "Login and get access + refresh tokens")
     public ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest request) {
-        LoginResponse response = authService.login(request.getEmail(), request.getPassword());
+        LoginResponse response = authService.login(request.getUsername(), request.getPassword());
         return ResponseEntity.ok(response);
     }
     

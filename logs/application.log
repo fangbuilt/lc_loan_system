@@ -4116,3 +4116,8 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	... 101 common frames omitted
 2026-02-09 19:24:37 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized field "username" (class com.fangbuilt.lc_loan_system.features.auth.api.dto.LoginRequest), not marked as ignorable]
 2026-02-09 19:24:45 [http-nio-8080-exec-1] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 463 ms
+2026-02-09 19:27:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-09 19:27:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-09 19:27:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09 19:27:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-09 19:27:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
