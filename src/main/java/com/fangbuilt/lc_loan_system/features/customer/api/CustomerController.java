@@ -3,6 +3,7 @@ package com.fangbuilt.lc_loan_system.features.customer.api;
 import com.fangbuilt.lc_loan_system.features.customer.domain.CustomerProfile;
 import com.fangbuilt.lc_loan_system.features.customer.service.CustomerService;
 import com.fangbuilt.lc_loan_system.features.user.domain.User;
+import com.fangbuilt.lc_loan_system.shared.domain.PageRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
