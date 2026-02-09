@@ -58,15 +58,18 @@ public class AuthService {
     }
     
     @Transactional
-    public LoginResponse login(String email, String password) {
+    public LoginResponse login(String username, String password) {
         Authentication authentication = authenticationManager.authenticate(
-            new UsernamePasswordAuthenticationToken(email, password)
+            new UsernamePasswordAuthenticationToken(username, password)
         );
         
-        CustomerProfile customer = (CustomerProfile) authentication.getPrincipal();
+        User user = (User) authentication.getPrincipal();
+
+        CustomerProfile customer = customerProfileRepository.findByUserId(user.getId())
+                .orElseThrow(() -> new UnauthorizedException("Customer profile not found"));
         
-        String accessToken = jwtService.generateAccessToken((UserDetails) customer);
-        String refreshTokenString = jwtService.generateRefreshToken((UserDetails) customer);
+        String accessToken = jwtService.generateAccessToken(user);
+        String refreshTokenString = jwtService.generateRefreshToken(user);
         
         RefreshToken refreshToken = new RefreshToken();
         refreshToken.setToken(refreshTokenString);
