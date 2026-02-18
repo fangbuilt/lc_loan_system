@@ -12,6 +12,7 @@ import com.fangbuilt.lc_loan_system.shared.service.BaseCrudService;
 import com.fangbuilt.lc_loan_system.shared.service.CreditScoreService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -183,6 +184,7 @@ public class LoanService extends BaseCrudService<Loan, LoanRepository> {
     /**
      * Get all loans (Admin only)
      */
+    @Cacheable(value = "loan")
     public List<Loan> getAllLoans() {
         return repository.findAll();
     }
